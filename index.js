@@ -1,8 +1,10 @@
 import express from 'express';
-import * as MailService from './sendEmail.js';
+import * as MailService from './util/sendEmail.js';
+import * as ipRestrictor from './util/ipRestrictor.js';
 
 const app = express();
 app.use(express.json());
+app.use(ipRestrictor.restrictIPs);
 app.listen(9090);
 
 const RECIPIENT_LIST = process.env.RECIPIENT_LIST;

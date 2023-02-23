@@ -24,13 +24,15 @@ MAIL_PORT=smtp-host
 
 MAIL_FROM=email-address
 
+ALLOW_LIST=ipaddress1,ipaddress2,...ipaddressN
+
 You can use [email to send SMS messages](https://en.wikipedia.org/wiki/SMS_gateway) by adding a phone number in the format 5555555@{Your    ProviderSMSGateway}  
 
 If you don't have your own smtp server, you can use a service like [sendgrid](https://sendgrid.com/solutions/email-api/smtp-service/?utm_source=google&utm_medium=cpc&utm_term=sendgrid&utm_campaign=Sitelink_SendGrid_G_S_NAMER_Brand_Tier1&cq_plac=&cq_net=g&cq_pos=&cq_med=&cq_plt=gp&gclid=CjwKCAiAl9efBhAkEiwA4ToriqLLpzC1HsM1jgWBhklkxo8pwRXHXt-i3ars6N2LLhZOPKwvGFSMOxoCphoQAvD_BwE). I use them since they have a free tier
 
 
 ## Usage
-Just send a post request to the server (default port 9090) with the json data 
+Add your IP to the ALLOW_LIST variable, and send a post request to the server (default port 9090) with the json data 
 
 {"subject": "Some subject", "text": "Some text"}
 
