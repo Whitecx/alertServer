@@ -12,7 +12,7 @@ Motivation: Have a local api to send text alerts. If you write a script on the f
 4. Run npm start
 
 ## ENV Vars (don't include curly braces)
-RECIPIENT_LIST={emailAddress1},{emailAddress2},...{emailAddressN}
+RECIPIENT_LIST=emailAddress1,emailAddress2,...emailAddressN
 
 MAIL_USER=smtp-user-name
 
