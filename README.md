@@ -30,8 +30,8 @@ If you don't have your own smtp server, you can use a service like [sendgrid](ht
 
 
 ## Usage
-Just send a post request to the server (default port 9090) with the json data {"subject": "Some subject", "text": "Some text"}
+Just send a post request to the server (default port 9090) with the json data 
+{"subject": "Some subject", "text": "Some text"}
 
 Ex:
-
 curl -X POST -H "Content-Type: application/json" -d '{"subject": "Test Text", "text": "Hello World!"}' http://localhost:9090
