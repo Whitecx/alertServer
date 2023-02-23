@@ -31,6 +31,7 @@ If you don't have your own smtp server, you can use a service like [sendgrid](ht
 
 ## Usage
 Just send a post request to the server (default port 9090) with the json data 
+
 {"subject": "Some subject", "text": "Some text"}
 
 Ex:
