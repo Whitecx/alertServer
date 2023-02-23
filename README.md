@@ -14,15 +14,15 @@ Motivation: Have a local api to send text alerts. If you write a script on the f
 ## ENV Vars (don't include curly braces)
 RECIPIENT_LIST={emailAddress1},{emailAddress2},...{emailAddressN}
 
-MAIL_USER={smtp-user-name}
+MAIL_USER=smtp-user-name
 
-MAIL_PASS={smtp-password}
+MAIL_PASS=smtp-password
 
-MAIL_HOST={smtp-host}
+MAIL_HOST=smtp-host
 
-MAIL_PORT={smtp-host}
+MAIL_PORT=smtp-host
 
-MAIL_FROM=<email-address>
+MAIL_FROM=email-address
 
 You can use [email to send SMS messages](https://en.wikipedia.org/wiki/SMS_gateway) by adding a phone number in the format 5555555@{Your    ProviderSMSGateway}  
 
